@@ -1,0 +1,82 @@
+
+[type=radio] {
+    position: absolute;
+    left: -9999px
+}
+
+[type=radio]+.radio-custom {
+    position: relative;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    margin-left: -90%;
+    top: 15px
+}
+
+[type=radio]+.radio-custom:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 30px;
+    height: 13px;
+    border-radius: 10px;
+    background: #d0caca;
+    background: #cdcdcd
+}
+
+[type=radio]:checked+.radio-custom:before {
+    background: #fd9917
+}
+
+[type=radio]+.radio-custom:after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    -webkit-box-shadow: 1px 1px 3px 0 rgba(0,0,0,.25);
+    box-shadow: 1px 1px 3px 0 rgba(0,0,0,.25);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease
+}
+
+[type=radio]:checked+.radio-custom:after {
+    left: 18px
+}
+
+.input-group-radio>label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.input-group-radio {
+    display: flex;
+    justify-content: space-evenly;
+    height: 55px;
+}
+
+.input-group-radio div {
+    padding: 0 15px
+}
+
+.input-group-prepend select {
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    height: 38px;
+    border-radius: 0px;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+    padding: 5px;
+    font-size: 14px;
+    width: 101%;
+    color: #495057 !important;
+}
