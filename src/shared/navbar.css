@@ -29,5 +29,9 @@
     }
     .navbar-nav{
         align-items: flex-start;
+        padding:0px;
+    }
+    .navbar{
+        padding:7px 10px
     }
 }
