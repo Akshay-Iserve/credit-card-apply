@@ -1,0 +1,25 @@
+
+.horizontal-line {
+    border: 1px solid #DADFEA;
+    position: absolute;
+    width: 70%;
+    left: 0;
+    top: 30%;
+    margin: auto;
+    left: 15%;
+}
+
+.how-its-work span.number {
+    height: 120px;
+    width: 120px;
+    line-height: 70px;
+    display: inline-block;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 25px;
+    border: 25px solid white;
+    align-self:center;
+}
+.bg-darkorange {
+    background-color: #ff8820 !important;
+}

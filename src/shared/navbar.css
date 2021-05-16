@@ -1,0 +1,33 @@
+.navbar{
+    background-color: #fff;
+    border-bottom: 1px solid #f7f7f7;
+}
+
+.navbar-nav{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0px 24px;
+}
+.brand-logo{
+    height:36px;
+}
+
+.contact-div a{
+    color:#005387;
+    font-size: 14px;
+}
+
+.contact-div{
+    float:right;
+}
+
+@media (max-width:450px){
+    .contact-div{
+        display:none;
+    }
+    .navbar-nav{
+        align-items: flex-start;
+    }
+}

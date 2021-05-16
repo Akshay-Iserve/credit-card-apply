@@ -23,10 +23,7 @@ const textInput = ({
                 </div>}
             <input className="form-control inputs" {...input} placeholder={label} type={type} />
         </div>
-        <span className="error">
-            {touched && error && <>{error}</>}
-        &nbsp;
-        </span>
+        {touched && error && <div className="error">{error}</div>}
     </React.Fragment>
 )
 

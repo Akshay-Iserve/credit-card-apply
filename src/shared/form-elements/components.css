@@ -80,3 +80,130 @@
     width: 101%;
     color: #495057 !important;
 }
+
+.error{
+    color: #fd724c;
+    font-size: 13px;
+    position:absolute;
+}
+
+@media (max-width:450px){
+    .form-control{
+        outline: none !important;
+        border: 1px solid #d3dce4;
+        height: 42px;
+        font-size: 14px;
+        color: #949090;
+        border-radius: 5px;
+        margin-top: 6px;
+        padding-left: 11px;
+    }
+    label{
+        color: #4e5871;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .input-group-prepend{
+        display:none;
+    }
+
+    [type="radio"]+label {
+        position: relative;
+        cursor: pointer;
+        line-height: 20px;
+        display: inline-block;
+        top: 7px;
+        padding-left: 43px;
+    }
+    [type="radio"]:checked+label:before {
+        background: #26dec5;
+    }
+    [type="radio"]:checked+label:before {
+        background: #26dec5;
+    }
+    [type="radio"]+label:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 4px;
+        width: 30px;
+        height: 13px;
+        border-radius: 10px;
+        background: #cdcdcd;
+    }
+    [type="radio"]:checked+label:after {
+        left: 18px;
+    }
+    [type="radio"]+label:after {
+        content: '';
+        width: 18px;
+        height: 18px;
+        background: #f9f7f7;
+        box-shadow: 1px 1px 3px 0 rgb(0 0 0 / 25%);
+        position: absolute;
+        top: 2px;
+        left: 0px;
+        border-radius: 100%;
+        transition: all 0.2s ease;
+    }
+    .input-group-radio{
+        display: flex;
+        align-items: center;
+        border: 1px solid #d3dce4;
+        margin-top: 10px;
+        padding: 0px 0px 10px 0px;
+        position: relative;
+        border-radius: 4px;
+        background: #f7f7f7;
+    }
+    .footer-submit-button {
+        background: #fff;
+        position: fixed;
+        bottom: 0;
+        padding: 5px 15px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #ebebeb;
+        box-shadow: 3px 3px 6px 5px #d7d8d8;
+        display: flex;
+        right: 0;
+        justify-content: space-between;
+    }
+    .footer-submit-button .home-icon {
+        font-size: 22px;
+        color: #ffffff;
+        background: #1770a3;
+        border: 2px solid orange;
+        padding: 5px 8px;
+        border-radius: 50%;
+    }
+    .footer-submit-button .btn-danger {
+        height: 42px;
+        background-image: linear-gradient(140deg, #f9a104 0%, #FF9800 50%, #ff7316fc 75%);
+        border: 0;
+        color: #fff;
+        border-radius: 4px;
+        width: 35%;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    .error{
+        color: #721c24;
+        background-color: #f8d7e2;
+        border: 1px solid #f5c6cb;
+        padding: 10px;
+        margin-top: 7px;
+        border-radius: 3px;
+        position:relative;
+    }
+}
+
+:focus-visible, :focus {
+    outline: none !important;
+}
+.react-date-picker__wrapper{
+    border:none;
+}
+

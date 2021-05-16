@@ -1,32 +1,10 @@
-.form-section{
-    background: #005387;
-    color:#fff;
-    font-size: 15px;
-}
 
-.breadcrumb{
-    background-color: transparent
-}
-.breadcrumb-item{
-    color: #fff;
-    font-size: 13px; 
-}
-.breadcrumb-item a{
-    color: #fff;
-    font-size: 13px;
-}
+
 .breadcrumb-item+.breadcrumb-item::before{
     content:"|";
     color:#fff;
 }
 
-
-.form-section .h1{
-    font-size: 24px;
-    text-align: center;
-    color:#fff;
-    font-weight: 400;
-}
 .gender-select {
     background-color: #e9ecef;
     border: 1px solid #ced4da;
@@ -40,7 +18,7 @@
     color: #495057 !important;
 }
 .form-group{
-    margin-bottom:0px;
+    margin-bottom:20px;
 }
 .form-group label{
     margin-bottom: 2px;
@@ -53,7 +31,21 @@ button.submit{
     background: #fd9917;
     border: 1px solid #fd9917;
 }
-.error{
-    color: #fd724c;
-    font-size: 13px;
+
+.add-remove-cc-div{
+    height: 30px;
+    width: 30px;
+    background: orange;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    box-shadow: 1px 1px 3px #0b4a72;
+}
+
+@media (max-width:450px){
+    .p-mobile-0{
+        padding:0px !important;
+    }
 }

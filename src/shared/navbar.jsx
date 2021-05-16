@@ -1,49 +1,42 @@
-import React, { Component } from 'react';
-
+import React, { useEffect, useState } from 'react';
+import './navbar.css';
 const Navbar = () => {
 
-    const styles = {
-        brandLogo: {
-            height: "36px"
-        },
-        navItems: {
-            width: "100%",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            padding: "0px 24px",
-        },
-        a: {
-            color: "#005387",
-            fontSize: "15px"
-        }
-    }
+    const [navigationHeight, setNavigationHeight] = useState(undefined);
+    const navigation = React.createRef();
+
+    useEffect(() => {
+        setNavigationHeight(navigation.current.offsetHeight);
+    }, []);
+
     return (
-        <nav className="navbar navbar-expand-sm navbar-light" style={{ backgroundColor: "#fff", borderBottom: "1px solid #f7f7f7" }}>
-            <ul className="navbar-nav" style={styles.navItems}>
-                <li className="nav-item active">
-                    <a className="nav-link" href="#" style={{ padding: "0px", ...styles.a }}>
-                        <img style={styles.brandLogo} src="https://www.iservefinancial.com/public/images/logos/iserve-logo-new.svg" />
-                    </a>
-                </li>
-                <li style={{ float: "right" }}>
-                    <div className="only-desktop">
-                        <div>
-                            <a href="tel:7668900900" style={styles.a}>
-                                <i className="fa fa-phone"></i>
-                                7668900900
+        <section style={{ marginBottom: navigationHeight }}>
+            <nav ref={navigation} className="navbar navbar-expand-sm navbar-light fixed-top">
+                <ul className="navbar-nav">
+                    <li className="nav-item active">
+                        <a className="nav-link" href="#" style={{ padding: "0px" }}>
+                            <img className="brand-logo" src="https://www.iservefinancial.com/public/images/logos/iserve-logo-new.svg" />
+                        </a>
+                    </li>
+                    <li className="contact-div">
+                        <div className="only-desktop">
+                            <div>
+                                <a href="tel:7668900900">
+                                    <i className="fa fa-phone"></i>
+                                &nbsp;7668900900
                             </a>
-                        </div>
-                        <div>
-                            <a id="home-contact-details" href="mailto:info@iservefinancial.com" style={styles.a}>
-                                <i className="fa fa-envelope-square"></i>
-                                info@iservefinancial.com
+                            </div>
+                            <div>
+                                <a id="home-contact-details" href="mailto:info@iservefinancial.com">
+                                    <i className="fa fa-envelope-square"></i>
+                                &nbsp;info@iservefinancial.com
                             </a>
+                            </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
-        </nav>
+                    </li>
+                </ul>
+            </nav>
+        </section>
     );
 }
 
